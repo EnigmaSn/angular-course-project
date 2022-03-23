@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IProduct } from './interface/product';
+import { productsMock } from './mocks/products.mock';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-homework';
+
+  public products: IProduct[] = productsMock;
 }
