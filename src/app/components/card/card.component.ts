@@ -6,13 +6,8 @@ import { IProduct } from 'src/app/interface/product';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.less']
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
 
   @Input() product!: IProduct;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

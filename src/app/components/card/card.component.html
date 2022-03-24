@@ -1,14 +1,21 @@
   <mat-card class="example-card">
-    <img mat-card-image src="{{ product.images[0].url }}" alt="{{ product.name }}">
-    <mat-card-title> {{ product?.name }} </mat-card-title>
+    <img mat-card-image 
+      [src]="product.images[0].url" 
+      [alt]="product.name"
+    >
+    <mat-card-title> 
+      {{ product?.name }} 
+    </mat-card-title>
     <mat-card-content>
         <p> 
           <b>Рейтинг: </b> 
           {{ product.rating | rate }}
         </p>
         <p>
-            {{ product.feedbacksCount }} отзыва
+            {{ product?.feedbacksCount }} отзыва
         </p>
-        {{ product.price | currency: 'RUB ' }}
+        <p>
+          {{ product?.price | currency: 'RUB ' }}
+        </p>
     </mat-card-content>	
 </mat-card>
