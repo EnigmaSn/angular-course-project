@@ -17,6 +17,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import { RatePipe } from './pipes/rate.pipe';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RatePipe } from './pipes/rate.pipe';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    RatePipe
+    RatePipe,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
