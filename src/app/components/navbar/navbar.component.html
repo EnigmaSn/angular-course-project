@@ -1,1 +1,14 @@
-<p>navbar works!</p>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer 
+      #drawer 
+      class="example-sidenav" 
+      mode="side"
+    >
+      <app-menu [categories]="categories"></app-menu>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <ng-content></ng-content>
+    </div>
+  
+</mat-drawer-container>

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { IProduct } from './interface/product';
 import { productsMock } from './mocks/products.mock';
 
@@ -11,4 +13,12 @@ export class AppComponent {
   title = 'angular-homework';
 
   public products: IProduct[] = productsMock;
+
+  @ViewChild(NavbarComponent, {static: true})
+  navbarComponent!: NavbarComponent;
+
+  onMenuToggle() {
+    this.navbarComponent.drawer.toggle();
+  }
+
 }

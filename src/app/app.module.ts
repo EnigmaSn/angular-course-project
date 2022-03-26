@@ -18,6 +18,7 @@ import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import { RatePipe } from './pipes/rate.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MenuComponent } from './components/header/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FooterComponent,
     CardComponent,
     RatePipe,
-    NavbarComponent
+    NavbarComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
-    MatButtonModule,
     MatSidenavModule,
     MatListModule,
     MatProgressSpinnerModule,
