@@ -4,16 +4,16 @@ import { ICategory } from 'src/app/interface/category';
 import { categories } from 'src/app/mocks/categories.mock';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.less']
+	selector: 'app-navbar',
+	templateUrl: './navbar.component.html',
+	styleUrls: ['./navbar.component.less'],
 })
 export class NavbarComponent {
 	@Output()
 	drawerEmit = new EventEmitter<MatDrawer>(true);
 
 	@ViewChild('drawer', { static: true, read: MatDrawer })
-	public drawer!: MatDrawer ;
+	public drawer!: MatDrawer;
 
 	@Output()
 	public categoryChange: EventEmitter<string> = new EventEmitter<string>();

@@ -15,35 +15,35 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CardComponent } from './components/card/card.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { RatePipe } from './pipes/rate.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MenuComponent } from './components/header/menu/menu.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    CardComponent,
-    RatePipe,
-    NavbarComponent,
-    MenuComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatToolbarModule,
-    MatIconModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatInputModule,
-    MatSidenavModule,
-    MatListModule,
-    MatProgressSpinnerModule,
-    MatCardModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		FooterComponent,
+		CardComponent,
+		RatePipe,
+		NavbarComponent,
+		MenuComponent,
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		MatToolbarModule,
+		MatIconModule,
+		BrowserAnimationsModule,
+		MatButtonModule,
+		MatInputModule,
+		MatSidenavModule,
+		MatListModule,
+		MatProgressSpinnerModule,
+		MatCardModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
