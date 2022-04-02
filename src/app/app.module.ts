@@ -30,7 +30,7 @@ import { ProductComponent } from './components/product/product.component';
 		RatePipe,
 		NavbarComponent,
 		MenuComponent,
-  ProductComponent,
+		ProductComponent,
 	],
 	imports: [
 		BrowserModule,
