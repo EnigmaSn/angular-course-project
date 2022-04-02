@@ -13,6 +13,7 @@ export class AppComponent {
 	title = 'angular-homework';
 
 	public products: IProduct[] = productsMock;
+	public product: IProduct = productsMock;
 
 	@ViewChild(NavbarComponent, { static: true })
 	navbarComponent!: NavbarComponent;

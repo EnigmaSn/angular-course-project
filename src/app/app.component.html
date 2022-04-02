@@ -1,6 +1,7 @@
 <app-header (clickMenu)="onMenuToggle()"></app-header>
 <app-navbar>
-	<div class="card-container" fxLayoutAlign="start start">
+	<!-- <div class="card-container" fxLayoutAlign="start start">
 		<app-card [product]="product" *ngFor="let product of products"></app-card>
-	</div>
+	</div> -->
+	<app-product [product]="product"></app-product>
 </app-navbar>

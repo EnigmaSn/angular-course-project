@@ -19,6 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { RatePipe } from './pipes/rate.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MenuComponent } from './components/header/menu/menu.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
 	declarations: [
@@ -29,6 +30,7 @@ import { MenuComponent } from './components/header/menu/menu.component';
 		RatePipe,
 		NavbarComponent,
 		MenuComponent,
+  ProductComponent,
 	],
 	imports: [
 		BrowserModule,
